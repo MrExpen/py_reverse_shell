@@ -30,7 +30,6 @@ def main():
 				clientsocket.send("exit{<END MSG>}".encode('cp866'))
 				s.close()
 				clientsocket.close()
-				s.shutdown()
 				return 0
 			clientsocket.send(full_msg.encode('cp866'))
 	except:
@@ -38,7 +37,6 @@ def main():
 		clientsocket.send("exit{<END MSG>}".encode('cp866'))
 		s.close()
 		clientsocket.close()
-		s.shutdown()
 		return 0
 
 
